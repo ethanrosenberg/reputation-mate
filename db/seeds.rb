@@ -5,3 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+ethan = User.create(email: "ethan@aol.com", password: "test")
+
+ethan.search_results.create(url: "http://www.google.com/search?q=ethan+rosenberg")
