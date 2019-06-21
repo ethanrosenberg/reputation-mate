@@ -3,9 +3,21 @@ class SearchResultsController < ApplicationController
 
   # GET /search_results
   def index
-    @search_results = SearchResult.all
 
-    render json: @search_results
+    if logged_in?
+
+      @search_results = current_user.search_results
+      #byebug
+
+      render json: @search_results, status: :ok
+    else
+      render json: {
+        error: "not logged in", status: :unauthorized
+      }
+    end
+    #@search_results = SearchResult.all
+
+    #render json: @search_results
   end
 
   # GET /search_results/1
