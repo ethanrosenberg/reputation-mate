@@ -3,7 +3,7 @@ Rails.application.routes.draw do
 
 
   scope '/api/v1' do
-    post '/login', to: 'sessions#create'
+    post '/search', to: 'search_results#search'
     get '/searchresults', to: 'search_results#index'
   end
 

@@ -2,6 +2,17 @@ class SearchResultsController < ApplicationController
   before_action :set_search_result, only: [:show, :update, :destroy]
 
   # GET /search_results
+  def search
+
+
+
+    render json: {
+      search_query: params[:query],
+      url: "http://apple.com"
+    }
+  end
+
+
   def index
 
     if logged_in?
