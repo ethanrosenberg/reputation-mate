@@ -7,7 +7,7 @@ def current_user
 end
 
 def logged_in?
-  true
+  false
 end
 
 end

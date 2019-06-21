@@ -73,9 +73,14 @@ class App extends  React.Component {
     fetch("http://localhost:3000/api/v1/searchresults")
       .then(r => r.json())
       .then(results => {
-        this.setState({
-          searchresults: results
-        })
+        if(results.error) {
+          alert("Not authorized for those search results.")
+        } else {
+          this.setState({
+            searchresults: results
+          })
+        }
+
       })
   }
 
