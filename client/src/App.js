@@ -5,7 +5,7 @@ import logo from './logo.svg';
 import './App.css';
 import SearchBar from './components/SearchBar';
 
-//import SearchResults from './components/SearchResults';
+import SearchResults from './components/SearchResults';
 
 import NavBar from './components/NavBar';
 
@@ -56,7 +56,6 @@ handleSearchBarSubmit = event => {
 
 
     const userInfo = this.state.query
-    console.log(userInfo)
     const headers = {
       method: "POST",
       headers: {
@@ -67,8 +66,12 @@ handleSearchBarSubmit = event => {
 
     fetch('http://localhost:3000/api/v1/search', headers)
       .then(r => r.json())
-      .then(console.log)
-
+      .then(response => {
+        this.setState({
+          query: this.state.query,
+          searchresults: response.results
+        })
+      })
   }
 
 
@@ -84,6 +87,7 @@ handleSearchBarSubmit = event => {
       handleSearchBarChange={this.handleSearchBarChange}
       handleSearchBarSubmit={this.handleSearchBarSubmit}
       />
+      <SearchResults results={this.state.searchresults}/>
 
       </div>
     );

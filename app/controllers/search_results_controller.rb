@@ -4,11 +4,12 @@ class SearchResultsController < ApplicationController
   # GET /search_results
   def search
 
-
-
     render json: {
-      search_query: params[:query],
-      url: "http://apple.com"
+      query: params[:query],
+      results: [
+        "http://apple.com",
+        "http://microsoft.com"
+      ]
     }
   end
 
