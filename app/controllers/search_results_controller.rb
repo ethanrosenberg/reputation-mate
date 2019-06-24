@@ -1,6 +1,9 @@
 
 #require_relative "./concerns/url_analyzer.rb"
 require 'url_analyzer'
+require 'json'
+require 'open-uri'
+require 'net/http'
 
 class SearchResultsController < ApplicationController
 
@@ -11,18 +14,31 @@ class SearchResultsController < ApplicationController
   def search
 
    #byebug
-   #@analyzed_urls = UrlAnalyzer.new
+
+
+
+
+   source = 'https://api.myjson.com/bins/1bb8zh'
+   resp = Net::HTTP.get_response(URI.parse(source))
+   data = resp.body
+   result = JSON.parse(data)
+   @urls = []
+     count = 0
+     result["items"].each do |item|
+
+       @urls << item["link"]
+       count = count + 1
+
+
+     end
+
+
+byebug
+
+
+
    @analyzer = UrlAnalyzer.new
    @analyzed_results = @analyzer.search_google
-
-   puts @analyzed_results
-
-   #byebug
-
-
-
-
-
     render json: {
       query: params[:query],
       results: @analyzed_results

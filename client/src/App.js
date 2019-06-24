@@ -106,7 +106,7 @@ handleSearchBarSubmit = event => {
 
       <div className="App">
       <NavBar color='black' title="ReputationMate" />
-      <h2>Check Your Reputation!</h2>
+      <h1>Check Your Reputation!</h1><br></br>
       <SearchBar
       handleSearchBarChange={this.handleSearchBarChange}
       handleSearchBarSubmit={this.handleSearchBarSubmit}

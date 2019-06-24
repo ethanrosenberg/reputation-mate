@@ -1,0 +1,438 @@
+{
+	"kind": "customsearch#search",
+	"url": {
+		"type": "application/json",
+		"template": "https://www.googleapis.com/customsearch/v1?q={searchTerms}&num={count?}&start={startIndex?}&lr={language?}&safe={safe?}&cx={cx?}&sort={sort?}&filter={filter?}&gl={gl?}&cr={cr?}&googlehost={googleHost?}&c2coff={disableCnTwTranslation?}&hq={hq?}&hl={hl?}&siteSearch={siteSearch?}&siteSearchFilter={siteSearchFilter?}&exactTerms={exactTerms?}&excludeTerms={excludeTerms?}&linkSite={linkSite?}&orTerms={orTerms?}&relatedSite={relatedSite?}&dateRestrict={dateRestrict?}&lowRange={lowRange?}&highRange={highRange?}&searchType={searchType}&fileType={fileType?}&rights={rights?}&imgSize={imgSize?}&imgType={imgType?}&imgColorType={imgColorType?}&imgDominantColor={imgDominantColor?}&alt=json"
+	},
+	"queries": {
+		"request": [{
+			"title": "Google Custom Search - ethan rosenberg",
+			"totalResults": "2130000",
+			"searchTerms": "ethan rosenberg",
+			"count": 10,
+			"startIndex": 1,
+			"inputEncoding": "utf8",
+			"outputEncoding": "utf8",
+			"safe": "off",
+			"cx": "005401753701149190923:tirbraay5sq"
+		}],
+		"nextPage": [{
+			"title": "Google Custom Search - ethan rosenberg",
+			"totalResults": "2130000",
+			"searchTerms": "ethan rosenberg",
+			"count": 10,
+			"startIndex": 11,
+			"inputEncoding": "utf8",
+			"outputEncoding": "utf8",
+			"safe": "off",
+			"cx": "005401753701149190923:tirbraay5sq"
+		}]
+	},
+	"context": {
+		"title": "Crispytactical"
+	},
+	"searchInformation": {
+		"searchTime": 0.478359,
+		"formattedSearchTime": "0.48",
+		"totalResults": "2130000",
+		"formattedTotalResults": "2,130,000"
+	},
+	"items": [{
+			"kind": "customsearch#result",
+			"title": "Ethan Rosenberg - Google Scholar Citations",
+			"htmlTitle": "<b>Ethan Rosenberg</b> - Google Scholar Citations",
+			"link": "http://scholar.google.com/citations?user=lm4FU_AAAAAJ&hl=en",
+			"displayLink": "scholar.google.com",
+			"snippet": "19, 2015. Fast switching and signature of efficient domain wall motion driven by \nspin-orbit torques in a perpendicular anisotropy magnetic insulator/Pt bilayer.",
+			"htmlSnippet": "19, 2015. Fast switching and signature of efficient domain wall motion driven by <br>\nspin-orbit torques in a perpendicular anisotropy magnetic insulator/Pt bilayer.",
+			"cacheId": "89z5_Tgj3HMJ",
+			"formattedUrl": "scholar.google.com/citations?user=lm4FU_AAAAAJ&hl=en",
+			"htmlFormattedUrl": "scholar.google.com/citations?user=lm4FU_AAAAAJ&amp;hl=en",
+			"pagemap": {
+				"cse_thumbnail": [{
+					"width": "128",
+					"height": "128",
+					"src": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTvOnp3J8NnQnu20RJpP4dWWDagLl7Wg6fEwaFKlAXacQUEQILS_UjpFZTg"
+				}],
+				"metatags": [{
+					"referrer": "origin-when-crossorigin",
+					"viewport": "width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=2",
+					"format-detection": "telephone=no"
+				}],
+				"itemlist": [{
+					"itemlistelement": "Block copolymer packing limits and interfacial reconfigurability in the assembly of periodic mesoporous organosilicasAW Wills, DJ Michalak, P Ercius, ER Rosenberg, T Perciano, D Ushizima, ...Advanc..."
+				}],
+				"hcard": [{
+					"fn": "Ethan Rosenberg",
+					"title": "MIT"
+				}],
+				"person": [{
+						"org": "mit.edu",
+						"role": "MIT"
+					},
+					{
+						"name": "Ethan Rosenberg",
+						"jobtitle": "MIT",
+						"worksfor": "mit.edu"
+					}
+				],
+				"cse_image": [{
+					"src": "http://scholar.google.com/citations/images/avatar_scholar_128.png"
+				}]
+			}
+		},
+		{
+			"kind": "customsearch#result",
+			"title": "Ethan Rosenberg",
+			"htmlTitle": "<b>Ethan Rosenberg</b>",
+			"link": "https://www.usnews.com/topics/author/ethan-rosenberg",
+			"displayLink": "www.usnews.com",
+			"snippet": "Ethan Rosenberg is a multimedia editor for U.S. News & World Report. You can \nfollow him on Twitter or reach him at erosenberg@usnews.com.",
+			"htmlSnippet": "<b>Ethan Rosenberg</b> is a multimedia editor for U.S. News &amp; World Report. You can <br>\nfollow him on Twitter or reach him at erosenberg@usnews.com.",
+			"cacheId": "OFlovMt919cJ",
+			"formattedUrl": "https://www.usnews.com/topics/author/ethan-rosenberg",
+			"htmlFormattedUrl": "https://www.usnews.com/topics/author/<b>ethan</b>-<b>rosenberg</b>",
+			"pagemap": {
+				"metatags": [{
+					"viewport": "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0",
+					"site": "topics",
+					"zone": "Ethan Rosenberg",
+					"fb:pages": "5834919267",
+					"optimizely": "Optimizely is supported by this application but is not enabled for this page."
+				}],
+				"listitem": [{
+					"item": "Home",
+					"name": "Home",
+					"position": "1"
+				}]
+			}
+		},
+		{
+			"kind": "customsearch#result",
+			"title": "Top 10 Ethan Rosenberg profiles | LinkedIn",
+			"htmlTitle": "Top 10 <b>Ethan Rosenberg</b> profiles | LinkedIn",
+			"link": "https://www.linkedin.com/pub/dir/Ethan/Rosenberg",
+			"displayLink": "www.linkedin.com",
+			"snippet": "View the profiles of professionals named Ethan Rosenberg on LinkedIn. There \nare 23 professionals named Ethan Rosenberg, who use LinkedIn to exchange ...",
+			"htmlSnippet": "View the profiles of professionals named <b>Ethan Rosenberg</b> on LinkedIn. There <br>\nare 23 professionals named <b>Ethan Rosenberg</b>, who use LinkedIn to exchange&nbsp;...",
+			"formattedUrl": "https://www.linkedin.com/pub/dir/Ethan/Rosenberg",
+			"htmlFormattedUrl": "https://www.linkedin.com/pub/dir/<b>Ethan</b>/<b>Rosenberg</b>",
+			"pagemap": {
+				"cse_thumbnail": [{
+					"width": "100",
+					"height": "100",
+					"src": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTeNlFTOZc6HfqgiOkU005IU_2G_MjMuzvw2iGscDmDtmKqYXEh4oVp2A"
+				}],
+				"metatags": [{
+					"referrer": "origin",
+					"pageimpressionid": "9a705d0f-c32b-497b-9a41-9b6ed821b080",
+					"appname": "chrome",
+					"pagekey": "public_directory",
+					"treeid": "lrP07txboBVg9GdwjCsAAA==",
+					"globaltrackingurl": "//www.linkedin.com/mob/tracking",
+					"globaltrackingappname": "chrome",
+					"globaltrackingappid": "webTracking",
+					"msapplication-tileimage": "https://static.licdn.com/scds/common/u/images/logos/linkedin/logo-in-win8-tile-144_v1.png",
+					"msapplication-tilecolor": "#0077B5",
+					"application-name": "LinkedIn",
+					"remotenavjscontentbaseurl": "https://static.licdn.com/scds/concat/common/js?v=0.1.619",
+					"lnkd-track-json-lib": "https://static.licdn.com/scds/concat/common/js?h=2jds9coeh4w78ed9wblscv68v-ebbt2vixcc5qz0otts5io08xv",
+					"apphost": "userp-frontend",
+					"appversion": "1.0.67",
+					"appinstance": "i001",
+					"jet-chromeversion": "1.1.225",
+					"jet-schost": "static.licdn.com",
+					"jet-csrftoken": "ajax:6384252036659795380",
+					"detectadblock": "//platform.linkedin.com/js/px.js"
+				}],
+				"cse_image": [{
+					"src": "https://static.licdn.com/scds/common/u/images/themes/katy/ghosts/person/ghost_person_100x100_v1.png"
+				}]
+			}
+		},
+		{
+			"kind": "customsearch#result",
+			"title": "Ethan Rosenberg - IMDb",
+			"htmlTitle": "<b>Ethan Rosenberg</b> - IMDb",
+			"link": "https://www.imdb.com/name/nm4285824/",
+			"displayLink": "www.imdb.com",
+			"snippet": "Ethan Rosenberg, Producer: Haymaker. Ethan Rosenberg is known for his work \non Haymaker, Stargate Origins (2018) and Funeral Kings (2012).",
+			"htmlSnippet": "<b>Ethan Rosenberg</b>, Producer: Haymaker. <b>Ethan Rosenberg</b> is known for his work <br>\non Haymaker, Stargate Origins (2018) and Funeral Kings (2012).",
+			"cacheId": "MHNuFT7uFG8J",
+			"formattedUrl": "https://www.imdb.com/name/nm4285824/",
+			"htmlFormattedUrl": "https://www.imdb.com/name/nm4285824/",
+			"pagemap": {
+				"cse_thumbnail": [{
+					"width": "200",
+					"height": "200",
+					"src": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRBn53Msa5mYPT0mbkDDqh9veCV4U3kKhpb6_G_WvY7OJJ3eHMoTHzi1hev"
+				}],
+				"metatags": [{
+					"apple-itunes-app": "app-id=342792525, app-argument=imdb:///name/nm4285824?src=mdot",
+					"og:url": "http://www.imdb.com/name/nm4285824/",
+					"theme-color": "#000000",
+					"pageid": "nm4285824",
+					"pagetype": "name",
+					"subpagetype": "main",
+					"og:image": "https://m.media-amazon.com/images/G/01/imdb/images-ANDW73HA/imdb_fb_logo._CB1542065250_.png",
+					"og:type": "actor",
+					"fb:app_id": "115109575169727",
+					"og:title": "Ethan Rosenberg - IMDb",
+					"og:site_name": "IMDb",
+					"title": "Ethan Rosenberg - IMDb",
+					"og:description": "Ethan Rosenberg, Producer: Haymaker. Ethan Rosenberg is known for his work on Haymaker, Stargate Origins (2018) and Funeral Kings (2012).",
+					"request_id": "A9DMX9A7KHC5TM4MB6ZE"
+				}],
+				"cse_image": [{
+					"src": "https://m.media-amazon.com/images/G/01/imdb/images-ANDW73HA/imdb_fb_logo._CB1542065250_.png"
+				}]
+			}
+		},
+		{
+			"kind": "customsearch#result",
+			"title": "Ethan Rosenberg Profiles | Facebook",
+			"htmlTitle": "<b>Ethan Rosenberg</b> Profiles | Facebook",
+			"link": "https://www.facebook.com/public/Ethan-Rosenberg",
+			"displayLink": "www.facebook.com",
+			"snippet": "View the profiles of people named Ethan Rosenberg. Join Facebook to connect \nwith Ethan Rosenberg and others you may know. Facebook gives people the ...",
+			"htmlSnippet": "View the profiles of people named <b>Ethan Rosenberg</b>. Join Facebook to connect <br>\nwith <b>Ethan Rosenberg</b> and others you may know. Facebook gives people the&nbsp;...",
+			"cacheId": "QbGl_PDMDJ8J",
+			"formattedUrl": "https://www.facebook.com/public/Ethan-Rosenberg",
+			"htmlFormattedUrl": "https://www.facebook.com/public/<b>Ethan</b>-<b>Rosenberg</b>",
+			"pagemap": {
+				"metatags": [{
+					"referrer": "default"
+				}]
+			}
+		},
+		{
+			"kind": "customsearch#result",
+			"title": "Ethan Rosenberg | SGCommand | FANDOM powered by Wikia",
+			"htmlTitle": "<b>Ethan Rosenberg</b> | SGCommand | FANDOM powered by Wikia",
+			"link": "https://stargate.fandom.com/wiki/Ethan_Rosenberg",
+			"displayLink": "stargate.fandom.com",
+			"snippet": "Ethan Rosenberg is an Associate Producer for Stargate Origins series. He is also \nProduction Coordinator for New Form. Ethan graduated from Boston University ...",
+			"htmlSnippet": "<b>Ethan Rosenberg</b> is an Associate Producer for Stargate Origins series. He is also <br>\nProduction Coordinator for New Form. Ethan graduated from Boston University&nbsp;...",
+			"cacheId": "LTxNRg1ngVwJ",
+			"formattedUrl": "https://stargate.fandom.com/wiki/Ethan_Rosenberg",
+			"htmlFormattedUrl": "https://stargate.fandom.com/wiki/<b>Ethan</b>_<b>Rosenberg</b>",
+			"pagemap": {
+				"cse_thumbnail": [{
+					"width": "225",
+					"height": "225",
+					"src": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTIG5JJ9EaZfbQ0tf_Dzufm7o8jACSj4Y_m7A5ucjpMEobKHgGGJHcV88-X"
+				}],
+				"metatags": [{
+					"viewport": "width=device-width, user-scalable=yes",
+					"twitter:card": "summary",
+					"twitter:site": "@getfandom",
+					"twitter:url": "https://stargate.fandom.com/wiki/Ethan_Rosenberg",
+					"twitter:title": "Ethan Rosenberg | SGCommand | FANDOM powered by Wikia",
+					"twitter:description": "Ethan Rosenberg is an Associate Producer for Stargate Origins series. He is also Production Coordinator for New Form. Ethan graduated from Boston University. He speaks English and Spanish...",
+					"fb:app_id": "112328095453510",
+					"og:type": "article",
+					"og:site_name": "SGCommand",
+					"og:title": "Ethan Rosenberg",
+					"og:description": "Ethan Rosenberg is an Associate Producer for Stargate Origins series. He is also Production Coordinator for New Form. Ethan graduated from Boston University. He speaks English and Spanish. External links Ethan Rosenberg's official website, Ethan Rosenberg's official page on Facebook, Ethan Rosenberg's official account on Twitter, Ethan Rosenberg's official account on Instagram, Ethan Rosenberg's official profile on LinkedIn, Ethan Rosenberg's official bio on Woodhead Entertainment, Ethan...",
+					"og:url": "https://stargate.fandom.com/wiki/Ethan_Rosenberg",
+					"og:image": "https://vignette.wikia.nocookie.net/stargate/images/4/41/Ethan_Rosenberg.jpg/revision/latest?cb=20180519182212",
+					"apple-itunes-app": "app-id=422467074, app-arguments=https://stargate.fandom.com/wiki/Ethan_Rosenberg"
+				}],
+				"cse_image": [{
+					"src": "https://vignette.wikia.nocookie.net/stargate/images/4/41/Ethan_Rosenberg.jpg/revision/latest?cb=20180519182212"
+				}]
+			}
+		},
+		{
+			"kind": "customsearch#result",
+			"title": "Ethan Rosenberg Class of 2019 - Player Profile | Perfect Game USA",
+			"htmlTitle": "<b>Ethan Rosenberg</b> Class of 2019 - Player Profile | Perfect Game USA",
+			"link": "https://www.perfectgame.org/players/playerprofile.aspx?ID=496541",
+			"displayLink": "www.perfectgame.org",
+			"snippet": "Ethan Rosenberg Class of 2019 Perfect Game Player Profile.",
+			"htmlSnippet": "<b>Ethan Rosenberg</b> Class of 2019 Perfect Game Player Profile.",
+			"cacheId": "n5J-eru4VFwJ",
+			"formattedUrl": "https://www.perfectgame.org/players/playerprofile.aspx?ID=496541",
+			"htmlFormattedUrl": "https://www.perfectgame.org/players/playerprofile.aspx?ID=496541",
+			"pagemap": {
+				"cse_thumbnail": [{
+					"width": "187",
+					"height": "270",
+					"src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1HP3pvnFW-bRoyLPXFuDFUt9IuyM9YB5YDRBSD8xN-Ri0xpKw9Ot5rf4"
+				}],
+				"metatags": [{
+					"viewport": "width=device-width, initial-scale=1",
+					"og:type": "website",
+					"og:image": "https://09d1d85a2275582e9dad-7b3e649a230e2ba2cff912d8af17e0b5.ssl.cf1.rackcdn.com/5496-11-Gold-2.jpg",
+					"og:description": "Ethan Rosenberg Class of 2019 Perfect Game Player Profile",
+					"og:title": "Ethan Rosenberg Class of 2019 - Player Profile | Perfect Game USA",
+					"og:url": "https://www.perfectgame.org/Players/PlayerProfile.aspx?ID=496541",
+					"og:site_name": "Perfect Game",
+					"og:image:width": "500",
+					"og:image:height": "750",
+					"twitter:site": "@PerfectGameUSA",
+					"twitter:title": "Ethan Rosenberg Class of 2019 - Player Profile | Perfect Game USA",
+					"twitter:description": "Ethan Rosenberg Class of 2019 Perfect Game Player Profile",
+					"twitter:image": "https://09d1d85a2275582e9dad-7b3e649a230e2ba2cff912d8af17e0b5.ssl.cf1.rackcdn.com/5496-11-Gold-2.jpg",
+					"msapplication-tilecolor": "#ffffff",
+					"msapplication-tileimage": "/ms-icon-144x144.png",
+					"theme-color": "#ffffff"
+				}],
+				"cse_image": [{
+					"src": "https://09d1d85a2275582e9dad-7b3e649a230e2ba2cff912d8af17e0b5.ssl.cf1.rackcdn.com/5496-11-Gold-2.jpg"
+				}]
+			}
+		},
+		{
+			"kind": "customsearch#result",
+			"title": "Ethan Rosenberg, Author at The Blognonian",
+			"htmlTitle": "<b>Ethan Rosenberg</b>, Author at The Blognonian",
+			"link": "http://blognonian.com/author/ethan_rosenberg/",
+			"displayLink": "blognonian.com",
+			"snippet": "Nov 6, 2018 ... THE BLOGNONIAN PRESENTS: HALLOWEEK COSTUME CONTEST 2018. \nBlog is proud to present this year's annual costume contest!",
+			"htmlSnippet": "Nov 6, 2018 <b>...</b> THE BLOGNONIAN PRESENTS: HALLOWEEK COSTUME CONTEST 2018. <br>\nBlog is proud to present this year&#39;s annual costume contest!",
+			"cacheId": "gX7qoEF7ukgJ",
+			"formattedUrl": "blognonian.com/author/ethan_rosenberg/",
+			"htmlFormattedUrl": "blognonian.com/author/<b>ethan</b>_<b>rosenberg</b>/",
+			"pagemap": {
+				"cse_thumbnail": [{
+					"width": "225",
+					"height": "225",
+					"src": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRihLHj8b-ZcdxgaW-sKpAUnkvE0wi1G228xojIEUYbWZuDixL1nzu6X_KV"
+				}],
+				"metatags": [{
+					"viewport": "width=device-width, initial-scale=1",
+					"og:locale": "en_US",
+					"og:type": "object",
+					"og:title": "Ethan Rosenberg, Author at The Blognonian",
+					"og:url": "http://blognonian.com/author/ethan_rosenberg/",
+					"og:site_name": "The Blognonian",
+					"twitter:card": "summary",
+					"twitter:title": "Ethan Rosenberg, Author at The Blognonian",
+					"msapplication-tileimage": "https://i0.wp.com/blognonian.com/wp-content/uploads/2016/02/cropped-favicon.png?fit=270%2C270"
+				}],
+				"cse_image": [{
+					"src": "https://i0.wp.com/blognonian.com/wp-content/uploads/2017/10/cropped-taps_logo-300x300.png?fit=300%2C300"
+				}]
+			}
+		},
+		{
+			"kind": "customsearch#result",
+			"title": "Ethan Rosenberg's profile • Letterboxd",
+			"htmlTitle": "<b>Ethan Rosenberg&#39;s</b> profile • Letterboxd",
+			"link": "https://letterboxd.com/ethanjrosenberg/",
+			"displayLink": "letterboxd.com",
+			"snippet": "Ethan uses Letterboxd to share film reviews and lists. 2542 films watched. \nFavorites: Bicycle Thieves (1948), Do the Right Thing (1989), Something Wild (\n1986), ...",
+			"htmlSnippet": "<b>Ethan</b> uses Letterboxd to share film reviews and lists. 2542 films watched. <br>\nFavorites: Bicycle Thieves (1948), Do the Right Thing (1989), Something Wild (<br>\n1986),&nbsp;...",
+			"cacheId": "6CkFkpFeIbYJ",
+			"formattedUrl": "https://letterboxd.com/ethanjrosenberg/",
+			"htmlFormattedUrl": "https://letterboxd.com/<b>ethan</b>j<b>rosenberg</b>/",
+			"pagemap": {
+				"cse_thumbnail": [{
+					"width": "225",
+					"height": "225",
+					"src": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR6A9nySE0PmfnZiJQp7g5gFZBNWRjCjdnmv_s-aS2Z6Djp7LfLCUUD1IMY"
+				}],
+				"rating": [{
+						"ratingvalue": "9",
+						"worstrating": "1",
+						"bestrating": "10"
+					},
+					{
+						"ratingvalue": "7",
+						"worstrating": "1",
+						"bestrating": "10"
+					},
+					{
+						"ratingvalue": "7",
+						"worstrating": "1",
+						"bestrating": "10"
+					},
+					{
+						"ratingvalue": "7",
+						"worstrating": "1",
+						"bestrating": "10"
+					},
+					{
+						"ratingvalue": "9",
+						"worstrating": "1",
+						"bestrating": "10"
+					},
+					{
+						"ratingvalue": "7",
+						"worstrating": "1",
+						"bestrating": "10"
+					},
+					{
+						"ratingvalue": "4",
+						"worstrating": "1",
+						"bestrating": "10"
+					},
+					{
+						"ratingvalue": "4",
+						"worstrating": "1",
+						"bestrating": "10"
+					},
+					{
+						"ratingvalue": "6",
+						"worstrating": "1",
+						"bestrating": "10"
+					},
+					{
+						"ratingvalue": "7",
+						"worstrating": "1",
+						"bestrating": "10"
+					}
+				],
+				"metatags": [{
+					"viewport": "width=1024",
+					"og:url": "https://letterboxd.com/ethanjrosenberg/",
+					"og:title": "Ethan Rosenberg’s profile",
+					"og:description": "Ethan uses Letterboxd to share film reviews and lists. 2,542 films watched. Favorites: Bicycle Thieves (1948), Do the Right Thing (1989), Something Wild (1986), Three Colors: Blue (1993). Bio: After putting it together, I realized that my top ten says more about me than any bio could. My full list of favorites (almost 400 movies!) is in a list called Great Movies. The Dissolve is dead. Long live The Dissolve! So is FilmStruck! Burn in hell, corporate fucks who tanked it! Rating system: 5: I Forget That I'm Alive 4 1/2: Masterpiece 4: Great to Amazing 3 1/2: Really Good to Great 3: Good to Really Good 2 1/2: Okay to Good 2: Has redeeming qualities 1 1/2: Mediocre 1: Bad 1/2: \"Allow me to pop a jaunty little bonnet on your purview and ram it up your shitter with a lubricated horse cock!\" 0: The Hobbit: Battle of the Five Armies",
+					"og:image": "https://secure.gravatar.com/avatar/54f57cfaa4342331588d20784384ad23?rating=PG&size=1000&border=&default=https%3A%2F%2Fletterboxd.com%2Fstatic%2Fimg%2Favatar1000.71ae0671.png",
+					"twitter:card": "summary",
+					"twitter:site": "@letterboxd",
+					"twitter:url": "https://letterboxd.com/ethanjrosenberg/",
+					"twitter:title": "Ethan Rosenberg’s profile on Letterboxd",
+					"twitter:description": "Ethan uses Letterboxd to share film reviews and lists. 2,542 films watched. Favorites: Bicycle Thieves (1948), Do the Right Thing (1989), Something Wild (1986), Three Colors: Blue (1993). Bio: After…",
+					"twitter:image": "https://secure.gravatar.com/avatar/54f57cfaa4342331588d20784384ad23?rating=PG&size=1000&border=&default=https%3A%2F%2Fletterboxd.com%2Fstatic%2Fimg%2Favatar1000.71ae0671.png",
+					"application-name": "Letterboxd",
+					"theme-color": "#445566",
+					"msapplication-tilecolor": "#445566",
+					"apple-itunes-app": "app-id=1054271011, affiliate-data=11l5KW, app-argument=https://letterboxd.com/ethanjrosenberg/",
+					"mobile-web-app-capable": "yes"
+				}],
+				"cse_image": [{
+					"src": "https://secure.gravatar.com/avatar/54f57cfaa4342331588d20784384ad23?rating=PG&size=1000&border=&default=https%3A%2F%2Fletterboxd.com%2Fstatic%2Fimg%2Favatar1000.71ae0671.png"
+				}]
+			}
+		},
+		{
+			"kind": "customsearch#result",
+			"title": "Ethan Rosenberg, MD | The Everett Clinic",
+			"htmlTitle": "<b>Ethan Rosenberg</b>, MD | The Everett Clinic",
+			"link": "https://www.everettclinic.com/physicians/ethan-rosenberg",
+			"displayLink": "www.everettclinic.com",
+			"snippet": "Dr. Ethan Rosenberg, MD, is an anesthesiologist with The Everett Clinic.",
+			"htmlSnippet": "Dr. <b>Ethan Rosenberg</b>, MD, is an anesthesiologist with The Everett Clinic.",
+			"cacheId": "mprxcZw6yYQJ",
+			"formattedUrl": "https://www.everettclinic.com/physicians/ethan-rosenberg",
+			"htmlFormattedUrl": "https://www.everettclinic.com/physicians/<b>ethan</b>-<b>rosenberg</b>",
+			"pagemap": {
+				"cse_thumbnail": [{
+					"width": "124",
+					"height": "196",
+					"src": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTFopY_VZzjXFl5dpYUFS2YhTlHDbI-nBIPenm64AYgUHFNQ9JNUfF8lw"
+				}],
+				"metatags": [{
+					"mobileoptimized": "width",
+					"handheldfriendly": "true",
+					"viewport": "width=device-width"
+				}],
+				"cse_image": [{
+					"src": "https://www.everettclinic.com/sites/default/files/doctors_images/ethan-rosenberg.jpg"
+				}]
+			}
+		}
+	]
+}

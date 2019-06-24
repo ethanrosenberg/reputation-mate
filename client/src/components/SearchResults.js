@@ -27,7 +27,7 @@ let modalClose = () => this.setState({ modalShow: false });
   <div class="container">
   <br></br>
     <table class="table">
-    <thead>
+    <thead class="thead-dark">
       <tr>
         <th scope="col">#</th>
         <th scope="col">Url</th>
@@ -42,13 +42,13 @@ let modalClose = () => this.setState({ modalShow: false });
         <td key={result.rank}>{result.rank}</td>
         <td key={result.rank}>{result.url}</td>
         <td key={result.rank}>{result.sentiment}</td>
-    
+
         <ButtonToolbar>
            <Button
              variant="primary"
              onClick={() => this.setState({ modalShow: true, currentUrl: result.url })}
              >
-             Launch vertically centered modal
+             Smart Analysis
            </Button>
 
            <PopupCentered
