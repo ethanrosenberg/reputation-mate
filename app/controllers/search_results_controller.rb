@@ -1,8 +1,25 @@
+
+#require_relative "./concerns/url_analyzer.rb"
+require 'url_analyzer'
+
 class SearchResultsController < ApplicationController
+
+
   before_action :set_search_result, only: [:show, :update, :destroy]
 
   # GET /search_results
   def search
+
+   #byebug
+   #@analyzed_urls = UrlAnalyzer.new
+   @analyzer = UrlAnalyzer.new
+   @analyzed_results = @analyzer.search_google
+
+   puts @analyzed_results
+
+   byebug
+
+
 
     render json: {
       query: params[:query],

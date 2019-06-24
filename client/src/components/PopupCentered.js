@@ -10,8 +10,9 @@ import ModalFooter from 'react-bootstrap/ModalFooter'
 import { Button } from 'react-bootstrap'
 
 class PopupCentered extends React.Component {
-  
+
   render() {
+
     return (
       <Modal
         style={{opacity:1}}

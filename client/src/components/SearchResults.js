@@ -21,33 +21,6 @@ render () {
 
 let modalClose = () => this.setState({ modalShow: false });
 
-
-    const searchResultsJSX = this.props.results.map((result, index) => (
-      <tr>
-      <td>{index + 1}</td>
-      <td key={index}>{result}</td>
-
-
-
-      <ButtonToolbar>
-        <Button
-          variant="primary"
-          onClick={() => this.setState({ modalShow: true })}
-          >
-          Launch vertically centered modal
-        </Button>
-
-        <PopupCentered
-          show={this.state.modalShow}
-          onHide={modalClose}
-        />
-      </ButtonToolbar>
-
-      </tr>
-    ));
-//  }
-
-
   return (
 
   <div className ="SearchResults">
@@ -62,7 +35,31 @@ let modalClose = () => this.setState({ modalShow: false });
       </tr>
     </thead>
     <tbody>
-        {searchResultsJSX}
+    {
+      this.props.results.map((result, index) => (
+        <tr>
+        <td key={index}>{index + 1}</td>
+        <td key={index}>{result}</td>
+
+        <ButtonToolbar>
+          <Button
+            variant="primary"
+            onClick={() => this.setState({ modalShow: true, currentUrl: result })}
+            >
+            Launch vertically centered modal
+          </Button>
+
+          <PopupCentered
+            show={this.state.modalShow}
+            onHide={modalClose}
+            url={this.state.currentUrl}
+          />
+        </ButtonToolbar>
+
+        </tr>
+      ))
+    }
+
     </tbody>
   </table>
 
