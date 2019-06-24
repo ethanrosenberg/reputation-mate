@@ -17,16 +17,15 @@ class SearchResultsController < ApplicationController
 
    puts @analyzed_results
 
-   byebug
+   #byebug
+
+
 
 
 
     render json: {
       query: params[:query],
-      results: [
-        "http://apple.com",
-        "http://microsoft.com"
-      ]
+      results: @analyzed_results
     }
   end
 

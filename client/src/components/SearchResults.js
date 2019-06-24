@@ -1,6 +1,6 @@
 import React from 'react';
 import Modal from './Modal';
-//import Popup from './Popup';
+
 
 
 import PopupCentered from './PopupCentered';
@@ -31,6 +31,7 @@ let modalClose = () => this.setState({ modalShow: false });
       <tr>
         <th scope="col">#</th>
         <th scope="col">Url</th>
+        <th scope="col">Initial Sentiment</th>
         <th scope="col">Analysis</th>
       </tr>
     </thead>
@@ -38,23 +39,25 @@ let modalClose = () => this.setState({ modalShow: false });
     {
       this.props.results.map((result, index) => (
         <tr>
-        <td key={index}>{index + 1}</td>
-        <td key={index}>{result}</td>
-
+        <td key={result.rank}>{result.rank}</td>
+        <td key={result.rank}>{result.url}</td>
+        <td key={result.rank}>{result.sentiment}</td>
+    
         <ButtonToolbar>
-          <Button
-            variant="primary"
-            onClick={() => this.setState({ modalShow: true, currentUrl: result })}
-            >
-            Launch vertically centered modal
-          </Button>
+           <Button
+             variant="primary"
+             onClick={() => this.setState({ modalShow: true, currentUrl: result.url })}
+             >
+             Launch vertically centered modal
+           </Button>
 
-          <PopupCentered
-            show={this.state.modalShow}
-            onHide={modalClose}
-            url={this.state.currentUrl}
-          />
-        </ButtonToolbar>
+           <PopupCentered
+             show={this.state.modalShow}
+             onHide={modalClose}
+             url={this.state.currentUrl}
+           />
+       </ButtonToolbar>
+
 
         </tr>
       ))

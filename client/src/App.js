@@ -75,12 +75,15 @@ handleSearchBarSubmit = event => {
     fetch('http://localhost:3000/api/v1/search', headers)
       .then(r => r.json())
       .then(response => {
+        console.log(response.results)
         this.setState({
           query: this.state.query,
           searchresults: response.results
         })
       })
   }
+
+
 
 
 
@@ -99,8 +102,7 @@ handleSearchBarSubmit = event => {
     }
 
 
-
-      return (
+    return (
 
       <div className="App">
       <NavBar color='black' title="ReputationMate" />
@@ -109,14 +111,7 @@ handleSearchBarSubmit = event => {
       handleSearchBarChange={this.handleSearchBarChange}
       handleSearchBarSubmit={this.handleSearchBarSubmit}
       />
-
-    //  {allresults}
-
-
-
-
-
-
+      {allresults}
       </div>
 
     );
