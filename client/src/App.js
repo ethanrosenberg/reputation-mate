@@ -7,6 +7,8 @@ import SearchBar from './components/SearchBar';
 
 import SearchResults from './components/SearchResults';
 
+import Modal from './components/Modal';
+
 import NavBar from './components/NavBar';
 
 //import {Button} from 'react-bootstrap';
@@ -78,6 +80,15 @@ handleSearchBarSubmit = event => {
 
   render() {
 
+    const hasResults = this.state.searchresults.length > 0;
+    let allresults;
+
+    if (hasResults) {
+      allresults = <SearchResults results={this.state.searchresults}/>;
+    }
+
+
+
       return (
 
       <div className="App">
@@ -87,10 +98,17 @@ handleSearchBarSubmit = event => {
       handleSearchBarChange={this.handleSearchBarChange}
       handleSearchBarSubmit={this.handleSearchBarSubmit}
       />
-      <SearchResults results={this.state.searchresults}/>
+
+      {allresults}
+
+
+      <Modal/>
 
       </div>
+
     );
+
+
   }
 }
 

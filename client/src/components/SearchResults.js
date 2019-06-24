@@ -10,12 +10,13 @@ const SearchResults = (props) => {
     <td>Analysis here.</td>
     </tr>
   ));
-  //const searchResultsJSX = <p>{results.join(", ")}</p>
+  //const searchResultsJSX <div class=”col-6 align-self-center”>= <p>{results.join(", ")}</p>
     return (
-      <div className ="SearchResults">
 
+<div className ="SearchResults">
+<div class="container">
+<br></br>
       <table class="table">
-      <caption>List of users</caption>
       <thead>
         <tr>
           <th scope="col">#</th>
@@ -28,8 +29,8 @@ const SearchResults = (props) => {
       </tbody>
     </table>
 
-
-      </div>
+</div>
+</div>
 
     )
 }
