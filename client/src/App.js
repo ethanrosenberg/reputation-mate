@@ -7,7 +7,12 @@ import SearchBar from './components/SearchBar';
 
 import SearchResults from './components/SearchResults';
 
-import Modal from './components/Modal';
+//import Popup from './components/Popup';
+
+
+
+import PopupCentered from './components/PopupCentered';
+import { ButtonToolbar, Button } from 'react-bootstrap'
 
 import NavBar from './components/NavBar';
 
@@ -19,7 +24,8 @@ class App extends  React.Component {
     super()
       this.state = {
         query: "",
-        searchresults: []
+        searchresults: [],
+        modalShow: false
       }
    }
 /*
@@ -80,6 +86,11 @@ handleSearchBarSubmit = event => {
 
   render() {
 
+    let modalClose = () => this.setState({ modalShow: false });
+
+
+
+
     const hasResults = this.state.searchresults.length > 0;
     let allresults;
 
@@ -99,10 +110,12 @@ handleSearchBarSubmit = event => {
       handleSearchBarSubmit={this.handleSearchBarSubmit}
       />
 
-      {allresults}
+    //  {allresults}
 
 
-      <Modal/>
+
+
+
 
       </div>
 
