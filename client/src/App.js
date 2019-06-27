@@ -11,7 +11,9 @@ import Home from './components/Home';
 
 import { Switch, Route } from 'react-router-dom';
 import MainContainer from './containers/MainContainer'
+import { connect } from 'react-redux';
 
+import { addSearchResults } from "./actions/searchActions.js"
 
 
 import PopupCentered from './components/PopupCentered';
@@ -23,6 +25,7 @@ import NavBar from './components/NavBar';
 
 class App extends  React.Component {
 
+/*
   constructor() {
     super()
       this.state = {
@@ -31,6 +34,13 @@ class App extends  React.Component {
         modalShow: false
       }
    }
+*/
+
+
+
+
+
+
 /*
    componentDidMount() {
      const token = localStorage.getItem("token")
@@ -89,28 +99,30 @@ handleSearchBarSubmit = event => {
 
 
 
+  handleOnClick = event => {
+    this.props.increaseCount();
+  };
+
+
 
   render() {
 
     let modalClose = () => this.setState({ modalShow: false });
 
-
-
-
+/*
     const hasResults = this.state.searchresults.length > 0;
     let allresults;
-
     if (hasResults) {
       allresults = <SearchResults results={this.state.searchresults}/>;
     }
-
+*/
 
     return (
 
       <div className="App">
       <NavBar color='black' title="ReputationMate" />
       <h1>Check Your Reputation!</h1><br></br>
-      <SearchBar handleSearchBarChange={this.handleSearchBarChange} handleSearchBarSubmit={this.handleSearchBarSubmit} />
+      //<SearchBar handleSearchBarChange={this.handleSearchBarChange} handleSearchBarSubmit={this.handleSearchBarSubmit} />
       <Switch>
         <Route exact path="/" render={Home} />
         <Route exact path="/about" render={About} />
@@ -118,8 +130,11 @@ handleSearchBarSubmit = event => {
       </Switch>
 
 
+      <button onClick={this.handleOnClick}>Click</button>
+      <p>{this.props.searchResults.length}</p>
 
-      {allresults}
+
+
       </div>
 
     );
@@ -128,4 +143,26 @@ handleSearchBarSubmit = event => {
   }
 }
 
-export default App;
+const mapStateToProps = state => {
+  return {
+    searchResults: state.searchResults
+  };
+};
+//const results =  "apple.com";
+const results = ["google.com", "apple.com"];
+
+const mapDispatchToProps = dispatch => {
+  return {
+    //increaseCount: () => dispatch(addSearchResults(results))
+    increaseCount: () => dispatch({ type: 'ADD_SEARCH_RESULTS', payload: results })
+  };
+};
+
+
+//export default App;
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+
+)(App);

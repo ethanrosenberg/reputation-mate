@@ -1,6 +1,12 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
+
+import { createStore } from 'redux';
+import { Provider } from 'react-redux';
+
+import searchResultReducer from './reducers/searchResultReducer'
+
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
@@ -8,11 +14,16 @@ import * as serviceWorker from './serviceWorker';
 
 import { BrowserRouter as Router } from 'react-router-dom';
 
-
+const store = createStore(
+  searchResultReducer,
+  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+);
 
 ReactDOM.render(
 <Router>
+  <Provider store={store}>
   <App />
+  </Provider>
 </Router>,
  document.getElementById('root'));
 
