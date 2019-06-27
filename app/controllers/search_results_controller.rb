@@ -16,7 +16,7 @@ class SearchResultsController < ApplicationController
    #byebug
 
 
-
+=begin
 
    source = 'https://api.myjson.com/bins/1bb8zh'
    resp = Net::HTTP.get_response(URI.parse(source))
@@ -34,7 +34,7 @@ class SearchResultsController < ApplicationController
 
 
 byebug
-
+=end
 
 
    @analyzer = UrlAnalyzer.new

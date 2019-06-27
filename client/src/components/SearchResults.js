@@ -11,9 +11,12 @@ class SearchResults extends React.Component {
   constructor() {
     super()
       this.state = {
-        modalShow: false
+        modalShow: false,
+
       }
    }
+
+
 
 
 
@@ -21,11 +24,29 @@ render () {
 
 let modalClose = () => this.setState({ modalShow: false });
 
+const hasNegativeItems = (props) => {
+
+
+
+  this.setState({ hasNegativeItems: false })
+
+   if(props.results.some( item => item['sentiment'] === 'negative' )) {
+     return <div class="alert alert-danger" role="alert">
+  This is a danger alert—check it out!
+</div>
+   } else {
+     return ""
+   }
+
+}
+
   return (
 
   <div className ="SearchResults">
+  
   <div class="container">
   <br></br>
+
     <table class="table">
     <thead class="thead-dark">
       <tr>

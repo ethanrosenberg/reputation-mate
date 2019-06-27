@@ -2,6 +2,9 @@ import React from 'react'
 
 const SearchBar = ({ handleSearchBarChange, handleSearchBarSubmit }) => {
   return (
+    <>
+
+
 
     <div class="col-md-6 col-md-offset-3">
     <div class="row">
@@ -20,7 +23,7 @@ const SearchBar = ({ handleSearchBarChange, handleSearchBarSubmit }) => {
     </form>
     </div>
     </div>
-
+    </>
   )
 }
 

@@ -4,10 +4,13 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import SearchBar from './components/SearchBar';
-
 import SearchResults from './components/SearchResults';
-
+import About from './components/About';
+import Home from './components/Home';
 //import Popup from './components/Popup';
+
+import { Switch, Route } from 'react-router-dom';
+import MainContainer from './containers/MainContainer'
 
 
 
@@ -107,10 +110,15 @@ handleSearchBarSubmit = event => {
       <div className="App">
       <NavBar color='black' title="ReputationMate" />
       <h1>Check Your Reputation!</h1><br></br>
-      <SearchBar
-      handleSearchBarChange={this.handleSearchBarChange}
-      handleSearchBarSubmit={this.handleSearchBarSubmit}
-      />
+      <SearchBar handleSearchBarChange={this.handleSearchBarChange} handleSearchBarSubmit={this.handleSearchBarSubmit} />
+      <Switch>
+        <Route exact path="/" render={Home} />
+        <Route exact path="/about" render={About} />
+        <Route component={ MainContainer } />
+      </Switch>
+
+
+
       {allresults}
       </div>
 
