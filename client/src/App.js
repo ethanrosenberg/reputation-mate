@@ -3,8 +3,10 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import SearchBar from './components/SearchBar';
-import SearchResults from './components/SearchResults';
+
+//import SearchBar from './components/SearchBar';
+//import SearchResults from './components/SearchResults';
+
 import About from './components/About';
 import Home from './components/Home';
 //import Popup from './components/Popup';
@@ -13,13 +15,13 @@ import { Switch, Route } from 'react-router-dom';
 import MainContainer from './containers/MainContainer'
 import { connect } from 'react-redux';
 
-import { addSearchResults } from "./actions/searchActions.js"
+//import { addSearchResults } from "./actions/searchActions.js"
 
 
-import PopupCentered from './components/PopupCentered';
-import { ButtonToolbar, Button } from 'react-bootstrap'
+//import PopupCentered from './components/PopupCentered';
+//import { ButtonToolbar, Button } from 'react-bootstrap'
 
-import NavBar from './components/NavBar';
+import NavigationContainer from './containers/NavigationContainer';
 
 //import {Button} from 'react-bootstrap';
 
@@ -35,10 +37,6 @@ class App extends  React.Component {
       }
    }
 */
-
-
-
-
 
 
 /*
@@ -62,14 +60,7 @@ class App extends  React.Component {
 */
 
 
-handleSearchBarChange = event => {
-  const { name, value } = event.target
-  this.setState({
-    query: ({
-      query: value
-    })
-  })
-}
+
 
 handleSearchBarSubmit = event => {
 
@@ -117,23 +108,19 @@ handleSearchBarSubmit = event => {
     }
 */
 
+//      //<SearchBar handleSearchBarChange={this.handleSearchBarChange} handleSearchBarSubmit={this.handleSearchBarSubmit} />
+
     return (
 
       <div className="App">
-      <NavBar color='black' title="ReputationMate" />
-      <h1>Check Your Reputation!</h1><br></br>
-      //<SearchBar handleSearchBarChange={this.handleSearchBarChange} handleSearchBarSubmit={this.handleSearchBarSubmit} />
+
+
+      <NavigationContainer />
+
       <Switch>
-        <Route exact path="/" render={Home} />
         <Route exact path="/about" render={About} />
         <Route component={ MainContainer } />
       </Switch>
-
-
-      <button onClick={this.handleOnClick}>Click</button>
-      <p>{this.props.searchResults.length}</p>
-
-
 
       </div>
 
@@ -143,26 +130,8 @@ handleSearchBarSubmit = event => {
   }
 }
 
-const mapStateToProps = state => {
-  return {
-    searchResults: state.searchResults
-  };
-};
-//const results =  "apple.com";
-const results = ["google.com", "apple.com"];
-
-const mapDispatchToProps = dispatch => {
-  return {
-    //increaseCount: () => dispatch(addSearchResults(results))
-    increaseCount: () => dispatch({ type: 'ADD_SEARCH_RESULTS', payload: results })
-  };
-};
 
 
 //export default App;
 
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-
-)(App);
+export default App;

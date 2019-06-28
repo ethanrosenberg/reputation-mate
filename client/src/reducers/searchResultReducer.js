@@ -1,4 +1,4 @@
-export default function searchResultReducer(state = { searchResults: [] }, action ) {
+export default function searchResultReducer(state = { query: '' }, action ) {
   //console.log(action);
    switch (action.type) {
      case 'ADD_SEARCH_RESULTS':
@@ -9,6 +9,18 @@ export default function searchResultReducer(state = { searchResults: [] }, actio
        searchResults: action.results
      });
 
+     case 'UPDATE_SEARCH_FORM':
+     return {
+       ...state,
+       query: action
+     }
+
+     case 'PERFORM_SEARCH':
+     console.log(action)
+     return {
+       ...state,
+       searchResults: action
+     }
 
      default:
      //console.log('Initial state.items length: %s', state.searchResults.length);

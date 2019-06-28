@@ -11,7 +11,7 @@ class UrlAnalyzer < ApplicationController
     #analysis Here
     results = [
       { rank: 1,
-        url: "https://www.ripoffreport.com/report/ali-shah/newport-coast-ca-crook-1480866",
+        url: "https://www.ethan.com/report/ali-shah/newport-coast-ca-crook-1480866",
         sentiment: 'negative'
       },
       { rank: 2,
