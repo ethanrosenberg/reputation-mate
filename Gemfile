@@ -8,6 +8,7 @@ gem 'rack-cors'
 gem  'jwt'
 gem 'dotenv-rails'
 gem 'google_custom_search_api'
+gem 'adomain'
 
 
 gem 'active_model_serializers'

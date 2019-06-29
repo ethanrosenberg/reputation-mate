@@ -2,6 +2,7 @@ Rails.application.routes.draw do
 
 
 
+  resources :properties
   scope '/api/v1' do
     post '/search', to: 'search_results#search'
     get '/searchresults', to: 'search_results#index'

@@ -49,6 +49,8 @@ GEM
       tzinfo (~> 1.1)
     addressable (2.6.0)
       public_suffix (>= 2.0.2, < 4.0)
+    adomain (0.1.1)
+      addressable (~> 2.5)
     arel (9.0.0)
     bcrypt (3.1.12)
     bootsnap (1.4.4)
@@ -161,6 +163,7 @@ PLATFORMS
 
 DEPENDENCIES
   active_model_serializers
+  adomain
   bcrypt (~> 3.1.7)
   bootsnap (>= 1.1.0)
   byebug

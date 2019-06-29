@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  root_url: MyString
+  sentiment: MyString
+  analysis: MyText
+  occurrences: 1
+
+two:
+  root_url: MyString
+  sentiment: MyString
+  analysis: MyText
+  occurrences: 1

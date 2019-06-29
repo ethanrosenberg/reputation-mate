@@ -1,9 +1,36 @@
 class UrlAnalyzer < ApplicationController
 
-  def search_google
+  def search_google(query)
     #fetch results Here
     #nokogiri to scrape urls
-    return analyze_results
+
+        res = []
+        queryResults = GoogleCustomSearchApi.search(query)
+
+        if queryResults.try(:error) || queryResults.items.empty?
+            res = []
+        else
+          queryResults["items"].each_with_index do |item, index|
+            itemData = {}
+            itemData["rank"] = index + 1
+            itemData["url"] = item["link"]
+
+            res << itemData
+
+             #res << { rank: (index + 1), url: item["link"] }
+           end
+        end
+
+    return res
+  end
+
+  def get_domain_root(domain)
+    # Adomain.domain item["link"]
+  end
+
+  def analyze_url(url)
+    root_url = Adomain.domain url
+
   end
 
   def analyze_results

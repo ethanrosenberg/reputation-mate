@@ -10,7 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_06_17_052749) do
+ActiveRecord::Schema.define(version: 2019_06_29_083119) do
+
+  create_table "properties", force: :cascade do |t|
+    t.string "root_url"
+    t.string "sentiment"
+    t.text "analysis"
+    t.integer "occurrences"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "search_results", force: :cascade do |t|
     t.integer "user_id"
