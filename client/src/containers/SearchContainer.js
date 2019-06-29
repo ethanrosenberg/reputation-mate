@@ -1,7 +1,7 @@
 import React from 'react';
 import SearchBar  from '../components/SearchBar'
 import Resultgrid  from '../components/Resultgrid'
-import { connect } from 'react-redux'
+
 
 const SearchContainer = () => {
   return (
@@ -17,14 +17,8 @@ const SearchContainer = () => {
 }
 
 
-const mapStateToProps = state => {
-  return {
-    searchResults: state.searchResults
-  }
-}
 
 
 
 
-
-export default connect(mapStateToProps)(SearchContainer)
+export default SearchContainer
