@@ -11,9 +11,27 @@ class UrlAnalyzer < ApplicationController
             res = []
         else
           queryResults["items"].each_with_index do |item, index|
+
+            property = Property.find_or_create_by(root_url: (Adomain.domain item["link"]))
+            #property.update(occurrences: += 1))
+            property.increment!(:occurrences)
+
             itemData = {}
             itemData["rank"] = index + 1
             itemData["url"] = item["link"]
+            itemData["sentiment"] = property.sentiment ||= "Unknown."
+            itemData["analysis"] = property.analysis ||= "Not available."
+            itemData["occurrences"] = property.occurrences
+
+
+
+            #Property.where(root_url: (Adomain.domain item["link"])).
+            #first_or_create(root_url: (Adomain.domain item["link"]), occurrences: 1).
+            #increment(:occurrences)
+
+            #update("occurrences = occurrences + 1", {:occurrences => occurrences})
+            #update(occurrences: += 1)
+            #byebug
 
             res << itemData
 
@@ -29,7 +47,15 @@ class UrlAnalyzer < ApplicationController
   end
 
   def analyze_url(url)
-    root_url = Adomain.domain url
+
+    Property.where(root_url: 'jason.com').
+    first_or_create(root_url: 'jason.com').
+    increment(:occurrences)
+
+    #analysis = {}
+    #analysisroot_url = Adomain.domain url
+
+
 
   end
 

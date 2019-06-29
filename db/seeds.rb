@@ -6,6 +6,13 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-ethan = User.create(email: "ethan@aol.com", password: "test")
+#ethan = User.create(email: "ethan@aol.com", password: "test")
 
-ethan.search_results.create(url: "http://www.google.com/search?q=ethan+rosenberg")
+#ethan.search_results.create(url: "http://www.google.com/search?q=ethan+rosenberg")
+
+
+
+
+property = Property.create(root_url: "starwars.com", sentiment: "bad", analysis: "claim your profile as soon as possible.", occurrences: 1)
+
+property = Property.create(root_url: "ninjas.com")
