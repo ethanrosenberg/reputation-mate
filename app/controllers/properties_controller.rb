@@ -14,4 +14,22 @@ class PropertiesController < ApplicationController
     end
 
   end
+
+  def findproperty
+
+
+    @property = Property.find_by(root_url: (Adomain.domain params[:url]))
+
+
+
+    if @property
+      render json: @property, status: :ok
+    else
+      render json: {
+        error: "hmmm something went wrong fetching this property"
+      }
+    end
+
+
+  end
 end

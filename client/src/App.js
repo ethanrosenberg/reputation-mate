@@ -49,7 +49,7 @@ class App extends  React.Component {
 
       <Switch>
         <Route exact path="/popular" render={PopularContainer} />
-        <Route exact path="/about" render={About} />
+        <Route exact path="/getstarted" render={About} />
         <Route exact path="/" render={Home} />
         <Route component={MainContainer} />
       </Switch>

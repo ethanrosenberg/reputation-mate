@@ -19,7 +19,7 @@ const Resultgrid = props => {
     {
 
       props.searchResults.map((result, index) => (
-        <Result key={index} rank={result.rank} url={result.url} sentiment='happy' />
+        <Result key={index} rank={result.rank} analysis={result.analysis} url={result.url} sentiment={result.sentiment}/>
       ))
     }
 

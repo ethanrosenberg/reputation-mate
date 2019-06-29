@@ -30,10 +30,13 @@ const UPDATE_SEARCH_RESULTS = "UPDATE_SEARCH_RESULTS";
 
 const UPDATE_MOST_POPULAR = "UPDATE_MOST_POPULAR";
 
+const UPDATE_CURRENT_URL = "UPDATE_CURRENT_URL";
+
 const initialState = {
   searchText: '',
-  searchResults: results,
-  mostPopular: ''
+  searchResults: [{rank: 1, url: "somewebsite.com/profile-about-you", sentiment: "NEGATIVE!!"}],
+  mostPopular: '',
+  currentUrl: ''
 };
 
 const searchTextReducer = (state = initialState.searchText, action) => {
@@ -57,10 +60,18 @@ const mostPopularReducer = (state = initialState.mostPopular, action) => {
   return state;
 };
 
+const currentUrlReducer = (state = initialState.currentUrl, action) => {
+  if(action.type === UPDATE_CURRENT_URL) {
+    return action.value
+  }
+  return state;
+};
+
 const rootReducer = combineReducers({
   searchText: searchTextReducer,
   searchResults: searchResultsReducer,
-  mostPopular: mostPopularReducer
+  mostPopular: mostPopularReducer,
+  currentUrl: currentUrlReducer
 });
 
 export default rootReducer;

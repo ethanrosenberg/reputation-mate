@@ -7,6 +7,7 @@ Rails.application.routes.draw do
     post '/search', to: 'search_results#search'
     get '/searchresults', to: 'search_results#index'
     get '/mostpopular', to: 'properties#all'
+    post '/findproperty', to: 'properties#findproperty'
   end
 
   #delete '/logout', to 'sessions#destroy'

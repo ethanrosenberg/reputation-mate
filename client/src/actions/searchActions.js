@@ -34,6 +34,17 @@ export const updateSearchResults = value => {
 };
 
 
+
+
+export const updateCurrentUrl = value => {
+  return {
+    type: "UPDATE_CURRENT_URL",
+    value
+  };
+};
+
+
+
 export const search = input => {
 
   return dispatch => {
