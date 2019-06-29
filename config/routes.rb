@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   scope '/api/v1' do
     post '/search', to: 'search_results#search'
     get '/searchresults', to: 'search_results#index'
+    get '/mostpopular', to: 'properties#all'
   end
 
   #delete '/logout', to 'sessions#destroy'

@@ -28,9 +28,12 @@ const results = [
 const UPDATE_SEARCH_TEXT = 'UPDATE_SEARCH_TEXT';
 const UPDATE_SEARCH_RESULTS = "UPDATE_SEARCH_RESULTS";
 
+const UPDATE_MOST_POPULAR = "UPDATE_MOST_POPULAR";
+
 const initialState = {
   searchText: '',
-  searchResults: results
+  searchResults: results,
+  mostPopular: ''
 };
 
 const searchTextReducer = (state = initialState.searchText, action) => {
@@ -47,9 +50,17 @@ const searchResultsReducer = (state = initialState.searchResults, action) => {
   return state;
 };
 
+const mostPopularReducer = (state = initialState.mostPopular, action) => {
+  if(action.type === UPDATE_MOST_POPULAR) {
+    return action.value
+  }
+  return state;
+};
+
 const rootReducer = combineReducers({
   searchText: searchTextReducer,
-  searchResults: searchResultsReducer
+  searchResults: searchResultsReducer,
+  mostPopular: mostPopularReducer
 });
 
 export default rootReducer;

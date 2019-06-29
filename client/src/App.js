@@ -21,7 +21,7 @@ import { connect } from 'react-redux';
 //import PopupCentered from './components/PopupCentered';
 //import { ButtonToolbar, Button } from 'react-bootstrap'
 
-import NavigationContainer from './containers/NavigationContainer';
+import NavigationBar from './components/NavigationBar';
 import PopularContainer from './containers/PopularContainer';
 
 //import {Button} from 'react-bootstrap';
@@ -39,88 +39,18 @@ class App extends  React.Component {
    }
 */
 
-
-/*
-   componentDidMount() {
-     const token = localStorage.getItem("token")
-     const headers = {
-       headers: {
-         "Authorization": token
-       }
-     }
-
-     if (token) {
-       fetch('http://localhost:3000/api/v1/get_current_user', headers)
-         .then(r => r.json())
-         .then(console.log)
-     }
-     else {
-       console.log("error!!!")
-     }
-   }
-*/
-
-
-
-
-handleSearchBarSubmit = event => {
-
-    event.preventDefault()
-
-
-    const userInfo = this.state.query
-    const headers = {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify(userInfo)
-    }
-
-    fetch('http://localhost:3000/api/v1/search', headers)
-      .then(r => r.json())
-      .then(response => {
-        console.log(response.results)
-        this.setState({
-          query: this.state.query,
-          searchresults: response.results
-        })
-      })
-  }
-
-
-
-
-  handleOnClick = event => {
-    this.props.increaseCount();
-  };
-
-
-
   render() {
 
-    let modalClose = () => this.setState({ modalShow: false });
-
-/*
-    const hasResults = this.state.searchresults.length > 0;
-    let allresults;
-    if (hasResults) {
-      allresults = <SearchResults results={this.state.searchresults}/>;
-    }
-*/
-
-//      //<SearchBar handleSearchBarChange={this.handleSearchBarChange} handleSearchBarSubmit={this.handleSearchBarSubmit} />
 
     return (
-
       <div className="App">
 
-
-      <NavigationContainer />
+      <NavigationBar />
 
       <Switch>
         <Route exact path="/popular" render={PopularContainer} />
         <Route exact path="/about" render={About} />
+        <Route exact path="/" render={Home} />
         <Route component={MainContainer} />
       </Switch>
 
@@ -128,12 +58,10 @@ handleSearchBarSubmit = event => {
 
     );
 
-
   }
 }
 
 
 
-//export default App;
 
 export default App;
