@@ -21,7 +21,6 @@ class UrlAnalyzer < ApplicationController
             itemData["url"] = item["link"]
             itemData["sentiment"] = property.sentiment ||= "Unknown."
             itemData["analysis"] = property.analysis ||= "Not available."
-            itemData["occurrences"] = property.occurrences
 
 
 
@@ -47,14 +46,6 @@ class UrlAnalyzer < ApplicationController
   end
 
   def analyze_url(url)
-
-    Property.where(root_url: 'jason.com').
-    first_or_create(root_url: 'jason.com').
-    increment(:occurrences)
-
-    #analysis = {}
-    #analysisroot_url = Adomain.domain url
-
 
 
   end

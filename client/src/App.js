@@ -22,6 +22,7 @@ import { connect } from 'react-redux';
 //import { ButtonToolbar, Button } from 'react-bootstrap'
 
 import NavigationContainer from './containers/NavigationContainer';
+import PopularContainer from './containers/PopularContainer';
 
 //import {Button} from 'react-bootstrap';
 
@@ -118,8 +119,9 @@ handleSearchBarSubmit = event => {
       <NavigationContainer />
 
       <Switch>
+        <Route exact path="/popular" render={PopularContainer} />
         <Route exact path="/about" render={About} />
-        <Route component={ MainContainer } />
+        <Route component={MainContainer} />
       </Switch>
 
       </div>
