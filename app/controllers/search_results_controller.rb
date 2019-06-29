@@ -36,12 +36,30 @@ class SearchResultsController < ApplicationController
 byebug
 =end
 
+    res = []
+
+    queryResults = GoogleCustomSearchApi.search(params[:query])
+
+    if queryResults.try(:error) || queryResults.items.empty?
+        res = []
+    else
+      queryResults["items"].each_with_index do |item, index|
+         res << { rank: (index + 1), url: item["link"] }
+       end
+    end
+
+
+
+
+
+  #byebug
+
 
    @analyzer = UrlAnalyzer.new
    @analyzed_results = @analyzer.search_google
     render json: {
       query: params[:query],
-      results: @analyzed_results
+      results: res
     }
   end
 

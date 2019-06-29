@@ -7,7 +7,7 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'rack-cors'
 gem  'jwt'
 gem 'dotenv-rails'
-
+gem 'google_custom_search_api'
 
 
 gem 'active_model_serializers'

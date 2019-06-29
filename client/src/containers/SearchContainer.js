@@ -1,15 +1,30 @@
 import React from 'react';
-import SearchForm  from '../components/SearchForm'
+import SearchBar  from '../components/SearchBar'
+import Resultgrid  from '../components/Resultgrid'
+import { connect } from 'react-redux'
 
 const SearchContainer = () => {
   return (
     <div className="SearchContainer">
-      <SearchForm />
+    <div class="col-md-10 col-md-offset-1">
+    <div class="row">
+      <SearchBar />
+      <Resultgrid />
+    </div>
+    </div>
     </div>
   );
 }
 
 
+const mapStateToProps = state => {
+  return {
+    searchResults: state.searchResults
+  }
+}
 
-//export default connect(mapStateToProps, { })(SearchContainer);
-export default SearchContainer;
+
+
+
+
+export default connect(mapStateToProps)(SearchContainer)

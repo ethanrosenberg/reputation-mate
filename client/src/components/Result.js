@@ -1,10 +1,16 @@
 import React from 'react';
 
 const Result = props => {
+
   return (
-    <div className='result-container'>
-    <h3>{props.searchResults.url}</h3>
-    </div>
+
+
+    <tr>
+    <td class="text-left" key={props.rank}>{props.rank}</td>
+    <td class="text-left" key={props.rank}>{props.url}</td>
+    <td class="text-left" key={props.rank}>{props.sentiment}</td>
+    </tr>
+
 
   );
 };

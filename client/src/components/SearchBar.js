@@ -1,7 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux';
-import { updateSearchText } from '../actions/searchActions'
-import { updateSearchResults } from '../actions/searchActions'
+import { updateSearchText, search } from '../actions/searchActions'
 
 const SearchBar = props => {
 
@@ -9,24 +8,7 @@ const SearchBar = props => {
 
       event.preventDefault()
 
-      const userInfo = props.searchText
-      console.log(userInfo)
-      const headers = {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify(userInfo)
-      }
-
-      fetch('http://localhost:3000/api/v1/search', headers)
-        .then(r => r.json())
-        .then(response => {
-          //dispatch(updateSearchResults(response));
-          console.log(response)
-          props.handleResults(response.results)
-        })
-
+      props.search(props.searchText)
 
     }
 
@@ -38,7 +20,7 @@ const SearchBar = props => {
     <form onSubmit={handleSub} role="form" id="form-buscar">
     <div class="form-group">
     <div class="input-group">
-    <input id="1" class="form-control" onChange={props.handleChange} type="text" name="search" placeholder="Search..." required/>
+    <input id="1" class="form-control" onChange={props.updateSearchText} value={props.searchText} type="text" name="search" placeholder="Search..." required/>
     <span class="input-group-btn">
     <button class="btn btn-success" type="submit">
     <i class="glyphicon glyphicon-search" aria-hidden="true"></i> Search
@@ -61,17 +43,8 @@ const mapStateToProps = state => {
   }
 }
 
-const mapDispatchToProps = dispatch => {
-  return {
-    handleChange: (e) =>
-      dispatch(updateSearchText(e.target.value)),
-    handleResults: (results) =>
-        dispatch(updateSearchResults(results)),
-
-
-  };
-};
 
 
 
-export default connect(mapStateToProps, mapDispatchToProps)(SearchBar)
+
+export default connect(mapStateToProps, {updateSearchText, search})(SearchBar)

@@ -10,8 +10,8 @@ const MainContainer = () => {
       {
         <>
 
-        <SearchBar />
-        <Resultgrid />
+        <SearchContainer />
+
         </>
       }
     </div>
