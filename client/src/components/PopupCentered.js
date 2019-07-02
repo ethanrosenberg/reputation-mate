@@ -10,6 +10,19 @@ import ModalFooter from 'react-bootstrap/ModalFooter'
 import { Button } from 'react-bootstrap'
 
 class PopupCentered extends React.Component {
+  constructor() {
+    super()
+    this.state = {
+      isLoading: true
+    }
+  }
+  componentDidMount() {
+    console.log("loading...")
+    this.setState({
+      isLoading: false
+    });
+  }
+
 
   render() {
 
@@ -27,9 +40,14 @@ class PopupCentered extends React.Component {
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <h4>Here is our smart suggestion:</h4>
+
           <p>
-            {this.props.analysis}
+          {this.props.isLoading ?
+          <>
+          <h4>Here is our smart suggestion:</h4>
+          <h3>Loading...</h3></> :
+           this.props.analysis
+          }
           </p>
         </Modal.Body>
         <Modal.Footer>

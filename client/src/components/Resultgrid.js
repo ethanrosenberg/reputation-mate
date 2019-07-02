@@ -2,10 +2,13 @@ import React from 'react';
 import Result from './Result';
 import { connect } from 'react-redux';
 
+
+
 const Resultgrid = props => {
   return (
     <div className='result-container'>
 
+    <h3>Results: {props.currentQuery}</h3>
     <table class="table">
     <thead class="thead-dark">
       <tr>
@@ -33,7 +36,8 @@ const Resultgrid = props => {
 
 const mapStateToProps = state => {
   return {
-    searchResults: state.searchResults
+    searchResults: state.searchResults,
+    currentQuery: state.searchText
   };
 };
 

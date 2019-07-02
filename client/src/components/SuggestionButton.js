@@ -5,16 +5,21 @@ import { ButtonToolbar, Button } from 'react-bootstrap'
 import { updateCurrentUrl } from '../actions/searchActions'
 
 class SuggestionButton extends React.Component {
+  
   constructor(props){
     super(props)
       this.state = {
         modalShow: false,
         currentUrl: '',
-        currentAnalysis: ''
+        currentAnalysis: '',
+        isLoading: true
       }
   }
 
+
+
 render() {
+
 
    const handleSmartClick = () => {
 
@@ -34,10 +39,8 @@ render() {
 
     }
 
-
-
-
     let modalClose = () => this.setState({ modalShow: false });
+
 
       return (
         <ButtonToolbar>
