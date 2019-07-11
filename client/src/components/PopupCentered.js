@@ -25,7 +25,7 @@ class PopupCentered extends React.Component {
 
 
   render() {
-
+  console.log(this.props.submission)
     return (
       <Modal
         style={{opacity:1}}
@@ -49,6 +49,9 @@ class PopupCentered extends React.Component {
            this.props.analysis
           }
           </p>
+          {  this.props.submission !== null ?
+          <a href={this.props.submission} class="btn btn-success" role="button" aria-disabled="true">Get Started</a> :
+          null }
         </Modal.Body>
         <Modal.Footer>
           <Button onClick={this.props.onHide}>Close</Button>

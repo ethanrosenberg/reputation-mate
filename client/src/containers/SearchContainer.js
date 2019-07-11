@@ -2,25 +2,37 @@ import React from 'react';
 import SearchBar  from '../components/SearchBar'
 import Resultgrid  from '../components/Resultgrid'
 import { connect } from 'react-redux'
+import logo from "../logo.svg"
 
-const SearchContainer = props => {
-  return (
-    <div className="SearchContainer">
-    <div class="col-md-10 col-md-offset-1">
-    <div class="row">
-      <SearchBar />
-      { props.hasResults.length > 1 ? <Resultgrid /> : <h3>Results: 0</h3> }
-    </div>
-    </div>
-    </div>
-  );
+class SearchContainer extends React.Component {
+
+
+  render() {
+
+
+
+
+    return (
+      <div className="SearchContainer">
+      <div class="col-md-10 col-md-offset-1">
+      <div class="row">
+        <SearchBar />
+       { this.props.hasResults.length > 1 ? <Resultgrid /> : null}
+
+      </div>
+      </div>
+      </div>
+    );
+  }
+
 }
 
 
 
 const mapStateToProps = state => {
   return {
-    hasResults: state.searchResults
+    hasResults: state.searchResults,
+    loadingResults: state.isLoading
   }
 }
 

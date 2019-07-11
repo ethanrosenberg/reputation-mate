@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_06_29_083119) do
+ActiveRecord::Schema.define(version: 2019_07_02_075949) do
 
   create_table "properties", force: :cascade do |t|
     t.string "root_url"
@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(version: 2019_06_29_083119) do
     t.integer "occurrences"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "submission_url"
   end
 
   create_table "search_results", force: :cascade do |t|

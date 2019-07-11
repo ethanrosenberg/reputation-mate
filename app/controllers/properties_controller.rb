@@ -6,6 +6,7 @@ class PropertiesController < ApplicationController
     @properties = Property.all
     #byebug
     if @properties.size > 0
+
       render json: @properties.sort_by(&:occurrences).reverse, status: :ok
     else
       render json: {
@@ -19,8 +20,6 @@ class PropertiesController < ApplicationController
 
 
     @property = Property.find_by(root_url: (Adomain.domain params[:url]))
-
-
 
     if @property
       render json: @property, status: :ok

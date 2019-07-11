@@ -5,12 +5,13 @@ import { ButtonToolbar, Button } from 'react-bootstrap'
 import { updateCurrentUrl } from '../actions/searchActions'
 
 class SuggestionButton extends React.Component {
-  
+
   constructor(props){
     super(props)
       this.state = {
         modalShow: false,
         currentUrl: '',
+        submissionUrl: '',
         currentAnalysis: '',
         isLoading: true
       }
@@ -34,7 +35,8 @@ render() {
     fetch('http://localhost:3000/api/v1/findproperty', headers)
       .then(r => r.json())
       .then(response=> {
-        this.setState({ modalShow: true, currentUrl: this.props.url , currentAnalysis: response.analysis});
+        this.setState({ modalShow: true, currentUrl: this.props.url , currentAnalysis: response.analysis, submissionUrl: response.submission_url});
+        console.log(response)
       })
 
     }
@@ -56,6 +58,7 @@ render() {
              onHide={modalClose}
              url={this.state.currentUrl}
              analysis={this.state.currentAnalysis || "Unknown."}
+             submission={this.state.submissionUrl}
            />
        </ButtonToolbar>
       )

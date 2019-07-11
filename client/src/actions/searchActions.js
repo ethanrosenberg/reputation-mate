@@ -1,16 +1,3 @@
-export const addSearchResults = results => {
-  return {
-    type: "ADD_SEARCH_RESULTS",
-    results
-  };
-};
-
-export const updateSearchForm = formData => {
-  return {
-    type: "UPDATE_SEARCH_FORM",
-    formData
-  };
-};
 
 export const performSearch = query => {
   return {
@@ -35,7 +22,6 @@ export const updateSearchResults = value => {
 
 
 
-
 export const updateCurrentUrl = value => {
   return {
     type: "UPDATE_CURRENT_URL",
@@ -48,6 +34,7 @@ export const updateCurrentUrl = value => {
 export const search = input => {
 
   return dispatch => {
+
     const headers = {
       method: "POST",
       headers: {
@@ -59,7 +46,8 @@ export const search = input => {
     fetch('http://localhost:3000/api/v1/search', headers)
       .then(r => r.json())
       .then(response => {
-        dispatch(updateSearchResults(response.results))
+          dispatch(updateSearchResults(response.results))
+
       })
   }
 }

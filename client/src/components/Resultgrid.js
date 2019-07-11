@@ -14,6 +14,7 @@ const Resultgrid = props => {
       <tr>
         <th scope="col">#</th>
         <th scope="col">Url</th>
+        <th scope="col">Likes</th>
         <th scope="col">Initial Sentiment</th>
         <th scope="col">Analysis</th>
       </tr>

@@ -7,8 +7,11 @@ class UrlAnalyzer < ApplicationController
         res = []
         queryResults = GoogleCustomSearchApi.search(query)
 
+        byebug
+
         if queryResults.try(:error) || queryResults.items.empty?
             res = []
+
         else
           queryResults["items"].each_with_index do |item, index|
 

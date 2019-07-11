@@ -50,7 +50,6 @@ render () {
     ))
     }
 
-
     </tbody>
   </table>
   </div>

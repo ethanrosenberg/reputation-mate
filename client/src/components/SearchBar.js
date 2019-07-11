@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { Suspense } from 'react'
 import { connect } from 'react-redux';
 import { updateSearchText, search } from '../actions/searchActions'
+
 
 const SearchBar = props => {
 
@@ -8,7 +9,10 @@ const SearchBar = props => {
 
       event.preventDefault()
 
+
+
       props.search(props.searchText)
+
 
     }
 
@@ -39,7 +43,8 @@ const SearchBar = props => {
 
 const mapStateToProps = state => {
   return {
-    searchText: state.searchText
+    searchText: state.searchText,
+    loading: state.isLoading
   }
 }
 
