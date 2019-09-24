@@ -40,6 +40,10 @@ class UrlAnalyzer < ApplicationController
     return res
   end
 
+  def update_average_ranking
+
+  end
+
   def get_domain_root(domain)
     # Adomain.domain item["link"]
   end
