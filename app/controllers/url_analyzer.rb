@@ -1,13 +1,9 @@
 class UrlAnalyzer < ApplicationController
 
   def search_google(query)
-    #fetch results Here
-    #nokogiri to scrape urls
 
         res = []
         queryResults = GoogleCustomSearchApi.search(query)
-
-        byebug
 
         if queryResults.try(:error) || queryResults.items.empty?
             res = []

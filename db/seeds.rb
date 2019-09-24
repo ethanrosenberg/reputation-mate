@@ -13,6 +13,6 @@
 
 
 
-property = Property.create(root_url: "starwars.com", sentiment: "bad", analysis: "claim your profile as soon as possible.", occurrences: 1)
-
-property = Property.create(root_url: "ninjas.com")
+Property.create(root_url: "twitter.com", sentiment: "positive", analysis: "Awesome! Claim your twitter profile with your name as soon as possible... Make sure to link to your other social media properties for maximum effect.", occurrences: 1)
+Property.create(root_url: "house.gov", sentiment: "negative", analysis: "Almost all .gov domains are controlled by institutions or the govenment and creating your own web property on them is very  tough...", occurrences: 1)
+Property.create(root_url: "wikipedia.org", sentiment: "negative", analysis: "Wikipedia doesnt allow personal urls or the ability to create your own profile...", occurrences: 1)

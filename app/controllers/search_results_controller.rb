@@ -39,11 +39,6 @@ byebug
 
 
 
-
-
-
-
-
    @analyzer = UrlAnalyzer.new
    @analyzed_results = @analyzer.search_google(params[:query])
     render json: {

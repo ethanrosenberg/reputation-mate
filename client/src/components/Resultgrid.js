@@ -8,13 +8,11 @@ const Resultgrid = props => {
   return (
     <div className='result-container'>
 
-    <h3>Results: {props.currentQuery}</h3>
     <table class="table">
     <thead class="thead-dark">
       <tr>
         <th scope="col">#</th>
         <th scope="col">Url</th>
-        <th scope="col">Likes</th>
         <th scope="col">Initial Sentiment</th>
         <th scope="col">Analysis</th>
       </tr>

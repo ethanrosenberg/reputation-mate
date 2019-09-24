@@ -15,6 +15,7 @@ class PopularTable extends React.Component {
     fetch('http://localhost:3000/api/v1/mostpopular')
       .then(r => r.json())
       .then(response =>{
+        console.log(response)
 
         this.setState({
           mostPopular: response
@@ -62,7 +63,7 @@ render () {
 
 const mapStateToProps = state => {
   return {
-    popularProperties: state.mostPopular
+    mostPopular: state.mostPopular
   };
 }
 
