@@ -16,6 +16,15 @@ class PropertiesController < ApplicationController
 
   end
 
+  def top_five_picks
+
+    topfive = sort_by(&:occurrences).reverse
+    @topfiveproperties = topfive[0...4]
+
+    render json: @topfiveproperties
+
+  end
+
   def findproperty
 
 
